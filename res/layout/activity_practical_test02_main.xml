@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ro.pub.cs.systems.pdsd.practicaltest02.PracticalTest02MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="Server" />
+	 <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+	         <EditText
+		        android:id="@+id/server_port"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:ems="10"
+		        android:hint="Port server" >
+	
+	        	<requestFocus />
+	    	</EditText>
+	    	
+	          <Button
+	            android:id="@+id/server_button"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="Connect to Server" />
+	 </LinearLayout>
+	 
+	  <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	          
+	      	<EditText
+		        android:id="@+id/client_address"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:ems="10"
+		        android:hint="CLient address" >
+	
+	        	<requestFocus />
+	    	</EditText>
+	      
+	      	<EditText
+		        android:id="@+id/client_port"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:ems="10"
+		        android:hint="CLient port" >
+	
+	        	<requestFocus />
+	    	</EditText>
+	      	
+	          
+	   </LinearLayout>
+	   <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	       <Spinner
+	           android:id="@+id/option"
+	           android:layout_width="0dp"
+	           android:layout_gravity="center"
+	           android:layout_height="wrap_content"
+	           android:layout_weight="1" />
+	  
+	       	<EditText
+		        android:id="@+id/city"
+		        android:layout_width="0dp"
+		        android:layout_gravity="center"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:ems="10"
+		        android:hint="City" >
+	
+	        	<requestFocus />
+	    	</EditText>
+
+	       	<Button
+	       	    android:id="@+id/information"
+	       	    android:layout_width="0dp"
+	       	    android:layout_height="wrap_content"
+	       	    android:layout_weight="2"
+	       	    android:text="Get information" />
+	       
+	   </LinearLayout>    
+	       
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_gravity="center" />
+
+</LinearLayout>
